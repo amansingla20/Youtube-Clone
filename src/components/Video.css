@@ -1,0 +1,38 @@
+.video {
+  width: 260px;
+  margin-bottom: 40px;
+}
+
+.video:hover {
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  height: 140px;
+  width: 250px;
+}
+
+.video-info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.video-text {
+  margin-left: 15px;
+}
+
+.video-text > h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.video-text > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.video-avatar {
+  height: 30px !important;
+  width: 30px !important;
+}
