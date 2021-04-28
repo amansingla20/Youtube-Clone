@@ -29,7 +29,7 @@ function Header() {
                 placeholder='Search' value={inputSearch}
                 onChange={(event)=> setInputSearch(event.target.value)}/>
                 <Link to={`/search/${inputSearch}`}>
-                <SearchIcon className='header-inputButton'/>
+                    <SearchIcon className='header-inputButton'/>
                 </Link>
             </div>
             <div className='mic-icon'>
