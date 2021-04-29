@@ -1,10 +1,24 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './SearchPage.css';
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined';
 import ChannelRow from './ChannelRow';
 import VideoRow from './VideoRow';
+import {useHistory} from 'react-router-dom';
 
 function SearchPage() {
+    //const [data, setData]= useState([]);
+    const history = useHistory();
+    let searchData= (history.location.pathname.split('/').pop());
+    //     fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchData}&key=AIzaSyAzeB-Yu3vJHW3MezGRqi3EQLHKZFUGTOI`,  {
+    //     crossDomain:true,
+    //     method: 'GET',
+    //     headers: {'Content-Type':'application/json'},
+    // })
+    //     .then((response)=>
+    //         response.json())
+    //      .then((xyz)=>{
+    //          console.log(xyz);
+    //     })
     return (
         <div className='searchPage'>
             <div className="searchPage-filter">

@@ -9,15 +9,16 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
         <Switch>
           <Route path="/search/:searchTerm">
+            <Header />
             <div className="app-page">
               <Sidebar />
               <SearchPage />
             </div>
           </Route>
           <Route exact path="/">
+            <Header />
             <div className="app-page">
               <Sidebar />
               <RecommendedVideos />
